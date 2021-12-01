@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 8rem;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #FFF7E1;
+    min-height: 100vh;
+}
+
+
+header {
+    padding: 2rem 9%;
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.header .logo {
+    display: flex;
+    align-items: center;
+}
+
+.header .logo .menu {
+    margin-left: 5rem ;
+}
+
+.header .logo .menu a {
+    margin-left: 4rem;
+    padding: .8rem 1rem;
+    font-size: 1.8rem;
+    color: #000;
+    font-weight: 600;
+}
+
+.header img {
+    width: 40px;
+    cursor: pointer;
+}
+
+.header .button-area a {
+    font-size: 1.8rem;
+    margin-left: 1rem;
+    padding: .8rem 1rem;
+    font-weight: 600;
+    color: #000;
+}
+
+.header .button-area a.active {
+    background-color: #222;
+    color: #9c9c9c;
+    border-radius: .3rem;
+}
+
+
+
+main {
+    padding: 2rem 9%;
+    background-image: url('/bg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+}
+
+section {
+    padding: 2rem 9%;
+}
+
+
+.hero {
+    position: absolute;
+    top: 30%;
+    left: 2rem; right: 0;
+}
+
+.hero .main-content,
+.btn-main {
+    max-width: 65%;
+    padding: 5rem;
+}
+
+.hero .main-content h1 {
+    font-size: 4rem;
+    color: #222;
+    margin-bottom: 2rem;
+    font-weight: 700;
+}
+
+.hero .main-content p {
+    font-size: 1.5rem;
+    color: #eee;
+    line-height: 2.5rem;
+}
+
+.hero .btn-main a.active{
+    background-color: #000;
+    padding: .8em 3rem;
+    text-align: justify;
+    font-size: 1.5rem;
+    border-radius: .3rem;
+    color: #FFF;
+    font-weight: 600;
+}
+
+.hero .btn-main a.active span {
+    color: #9c9c9c;
+}
+
+@media screen and (max-width:991px) {
+    html {
+        font-size: 55%;
+    }
+    header, main {
+        padding: 2rem;
+    }
+    section {
+        padding: 2rem;
+    }
+}        
+
+@media screen and (max-width:450px) {
+    html {
+        font-size: 45%;
+    }
+}
